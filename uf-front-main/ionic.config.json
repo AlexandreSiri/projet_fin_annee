@@ -1,0 +1,7 @@
+{
+    "name": "uf",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

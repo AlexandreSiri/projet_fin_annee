@@ -1,0 +1,8 @@
+{
+    "appId": "io.ionic.uf",
+    "appName": "uf",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+  }

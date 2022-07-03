@@ -1,0 +1,68 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "standard",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": "./tsconfig.eslint.json"
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "dist",
+        "assets",
+        "public"
+    ],
+    "plugins": [
+        "prettier",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-empty": "warn",
+        "no-useless-catch": 1,
+        "no-empty-pattern": "warn",
+        "no-empty-character-class": "off",
+        "prettier/prettier": 1,
+        "prefer-const": "warn",
+        "no-unused-vars": "off",
+        "no-empty-function": "off",
+        "array-callback-return": "off",
+        "@typescript-eslint/no-empty-function": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/switch-exhaustiveness-check": 2,
+        "no-useless-rename": 1,
+        "object-shorthand": 1,
+        "@typescript-eslint/no-use-before-define": 0,
+        "@typescript-eslint/no-non-null-assertion": 0,
+        "@typescript-eslint/ban-types": 1,
+        "@typescript-eslint/no-unused-vars": [
+            1,
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
+    ]
+}
